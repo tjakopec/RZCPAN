@@ -5,5 +5,10 @@
 
 b1 = int(input('Unesi prvi broj: '))
 b2 = int(input('Unesi drugi broj: '))
-for i in range(b1,b2+1):
+
+manji=b1 if b1<b2 else b2
+veci=b1 if b1>b2 else b2
+veci=veci+1
+
+for i in range(manji,veci):
     print(i)
