@@ -16,9 +16,10 @@ while True:
             print('Čestitam')
             break
         else:
+            pogadali.sort()
             print('Do sada si probao',pogadali,sep='\n')
             if b < sb:
                 print('Zamišljeni broj je veći')
             else:
                 print('Zamišljeni broj je manji')
-print('Pogodili ste iz',pokusaji,'. pokušaja')
+print('Pogodili ste iz ' + pokusaji + '. pokušaja')
