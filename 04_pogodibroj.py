@@ -8,14 +8,17 @@ pogadali=[]
 while True:
     b = m.ulaz('Pogodi broj: ',int)
     pokusaji=pokusaji+1
-    pogadali.append(b)
-    if sb == b:
-        print('Čestitam')
-        break
+    if b in pogadali:
+        print('To si već probao, daj se skoncentriraj')
     else:
-        print('Do sada si probao',pogadali,sep='\n')
-        if b < sb:
-            print('Zamišljeni broj je veći')
+        pogadali.append(b)
+        if sb == b:
+            print('Čestitam')
+            break
         else:
-            print('Zamišljeni broj je manji')
+            print('Do sada si probao',pogadali,sep='\n')
+            if b < sb:
+                print('Zamišljeni broj je veći')
+            else:
+                print('Zamišljeni broj je manji')
 print('Pogodili ste iz',pokusaji,'. pokušaja')
