@@ -9,3 +9,8 @@ while True:
     if sb == b:
         print('Čestitam')
         break
+    else:
+        if b < sb:
+            print('Zamišljeni broj je veći')
+        else:
+            print('Zamišljeni broj je manji')
