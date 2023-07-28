@@ -6,12 +6,27 @@ import random as r
 
 def izracunaj(i1,i2):
     s = i1.lower() + i2.lower()
-    print(s)
+    #print(s)
     slova=[]
     for z in s:
         slova.append(z)
     slova.sort()
-    print(slova)
+    #print(slova)
+    brojevi=[]
+    for s in slova:
+        u=0
+        for s1 in slova:
+            if s==s1:
+                u=u+1
+        brojevi.append(u)
+    #print(brojevi)
+    s=''
+    for b in brojevi:
+        s = s + str(b)
+    b = int(s)
+    while b>100:
+        b=int(b/10)
+    print(b,'%')
 
 ime1 = input('Unesi svoje ime: ')
 
